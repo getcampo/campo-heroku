@@ -1,0 +1,7 @@
+run:
+  web:
+    image: getcampo/campo:latest
+    command: bin/rails server -b 0.0.0.0
+  worker:
+    image: getcampo/campo:latest
+    command: sidekiq
