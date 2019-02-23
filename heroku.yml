@@ -5,3 +5,7 @@ build:
 run:
   web: bin/rails server -b 0.0.0.0
   worker: sidekiq
+release:
+  image: web
+  command:
+    - bin/update
