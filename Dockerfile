@@ -1,0 +1,1 @@
+FROM getcampo/campo:latest
