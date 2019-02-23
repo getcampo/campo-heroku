@@ -1,0 +1,21 @@
+{
+  "name": "Campo",
+  "description": "A lightweight web forum.",
+  "website": "https://getcampo.com",
+  "repository": "https://github.com/getcampo/campo",
+  "stack": "container",
+  "env": {
+    "SECRET_TOKEN": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    },
+    "RAILS_ENV": {
+      "description": "Running mode.",
+      "value": "production"
+    }
+  },
+  "addons": [
+    "heroku-postgresql:hobby-dev",
+    "heroku-redis:hobby-dev"
+  ]
+}

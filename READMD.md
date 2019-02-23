@@ -4,6 +4,12 @@ Campo Heroku deploy template.
 
 ## Usage
 
+### Deploy by Heroku Button (Quick Trial)
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+### Deploy by Source Code (Recommend)
+
 Clone this repo:
 
 ```console
