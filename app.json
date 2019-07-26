@@ -8,10 +8,6 @@
     "SECRET_KEY_BASE": {
       "description": "A secret key for verifying the integrity of signed cookies.",
       "generator": "secret"
-    },
-    "RAILS_ENV": {
-      "description": "Running mode.",
-      "value": "production"
     }
   },
   "addons": [
