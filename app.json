@@ -3,6 +3,7 @@
   "description": "A lightweight web forum.",
   "website": "https://getcampo.com",
   "repository": "https://github.com/getcampo/campo",
+  "logo": "https://getcampo.com/images/icon.png",
   "stack": "container",
   "env": {
     "SECRET_KEY_BASE": {

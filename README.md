@@ -4,7 +4,7 @@ Campo Heroku deploy template.
 
 ## Usage
 
-### First deploy
+### Setup
 
 Click this button:
 
@@ -20,7 +20,7 @@ By default, worker dyno is no running, turn it on in heroku dashboard, or some f
 
 When campo release new version, we can use heroku-cli and git to upgrade.
 
-*Please backup database before every upgrade, visit: https://devcenter.heroku.com/articles/heroku-postgres-backups*
+**Please backup database before every upgrade, visit: https://devcenter.heroku.com/articles/heroku-postgres-backups**
 
 Install heroku-cli, visit: https://devcenter.heroku.com/articles/heroku-cli .
 
