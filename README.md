@@ -4,11 +4,31 @@ Campo Heroku deploy template.
 
 ## Usage
 
-### Deploy by Heroku Button (Quick Trial)
+### First deploy
+
+Click this button:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/getcampo/campo-heroku)
 
-### Deploy by Source Code (Recommend)
+Enter an unique app name, click "Deploy app".
+
+After deploy done, click "View app" to open your website, follow setup wizard to finish deploy.
+
+By default, worker dyno is no running, turn it on in heroku dashboard, or some features like full text search will no work.
+
+### Upgrade
+
+When campo release new version, we can use heroku-cli and git to upgrade.
+
+*Please backup database before every upgrade, visit: https://devcenter.heroku.com/articles/heroku-postgres-backups*
+
+Install heroku-cli, visit: https://devcenter.heroku.com/articles/heroku-cli .
+
+Login heroku:
+
+```console
+$ heroku login
+```
 
 Clone this repo:
 
@@ -17,37 +37,23 @@ $ git clone https://github.com/getcampo/campo-heroku.git
 $ cd campo-heroku
 ```
 
-Install heroku-cli, visit: https://devcenter.heroku.com/articles/heroku-cli .
-
-Login:
+Add heroku config, replace your-app-name with real name:
 
 ```console
-$ heroku login
+$ heroku git:remote -a your-app-name
 ```
 
-Create heroku app:
+Push code:
 
 ```console
-$ heroku create
-$ heroku stack:set container
+$ git push heroku master
 ```
 
-Create addon:
+After heroku deploy finished, campo will upgrade to new version.
+
+You can use this command for next time:
 
 ```console
-$ heroku addons:create heroku-postgresql:hobby-dev
-$ heroku addons:create heroku-redis:hobby-dev
-```
-
-Set ENV:
-
-```console
-$ heroku config:set RAILS_ENV=production
-$ heroku config:set SECRET_KEY_BASE=xxx # replace by your secret key!!!
-```
-
-Deploy app:
-
-```console
+$ git pull
 $ git push heroku master
 ```
