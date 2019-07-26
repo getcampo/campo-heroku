@@ -6,7 +6,7 @@ Campo Heroku deploy template.
 
 ### Deploy by Heroku Button (Quick Trial)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/getcampo/campo-heroku)
 
 ### Deploy by Source Code (Recommend)
 
