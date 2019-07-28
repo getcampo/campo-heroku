@@ -67,8 +67,6 @@ Heroku will auto restart app.
 
 ### Upgrade
 
-When campo release new version, we can use heroku-cli and git to upgrade.
-
 **Please backup database before every upgrade, visit: https://devcenter.heroku.com/articles/heroku-postgres-backups**
 
 Clone this repo:
