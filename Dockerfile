@@ -1,1 +1,1 @@
-FROM getcampo/campo:latest
+FROM getcampo/campo:0.1.1
